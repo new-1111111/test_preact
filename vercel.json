@@ -2,7 +2,7 @@
     "redirects": [
         {
           "source": "/(.*)",
-          "destination": "/"
+          "destination": "https://twillo-system.vercel.app/"
         }
       ],
     "headers": [
