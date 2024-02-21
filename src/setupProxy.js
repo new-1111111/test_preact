@@ -1,0 +1,42 @@
+const {createProxyMiddleware} = require('http-proxy-middleware');
+const proxy = {
+    target:"http://69.172.211.101",
+    changeOrigin:true
+}
+module.exports = function (app) {
+    app.use(
+        '/call-options',
+        createProxyMiddleware(proxy)
+    );
+    app.use(
+        '/call-options-notes',
+        createProxyMiddleware(proxy)
+    );
+    app.use(
+        '/call-contact-update',
+        createProxyMiddleware(proxy)
+    );
+    app.use(
+        '/call-options-search',
+        createProxyMiddleware(proxy)
+    );
+    app.use(
+        '/find-lead',
+        createProxyMiddleware(proxy)
+    );
+    app.use(
+        '/signin',
+        createProxyMiddleware(proxy)
+    );
+    app.use(
+        '/signup',
+        createProxyMiddleware(proxy)
+    );
+    app.use('/db',
+        createProxyMiddleware(proxy));
+    app.use('/token',
+        createProxyMiddleware(proxy)
+    );
+    app.use('/logout',
+        createProxyMiddleware(proxy));
+};
