@@ -1,6 +1,6 @@
 const {createProxyMiddleware} = require('http-proxy-middleware');
 const proxy = {
-    target:"https://dffa-69-172-211-101.ngrok-free.app",
+    target:"http://69.172.211.101",
     changeOrigin:true
 }
 module.exports = function (app) {

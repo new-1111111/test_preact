@@ -13,6 +13,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@twilio/voice-sdk": "^2.10.2",
+    "axios": "^1.6.7",
     "gsap": "^3.12.4",
     "http-proxy-middleware": "^2.0.6",
     "js-cookie": "^3.0.5",
@@ -62,6 +63,5 @@
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   },
-  "homepage":".",
-  "proxy":"https://dffa-69-172-211-101.ngrok-free.app"
+  "homepage": "."
 }
